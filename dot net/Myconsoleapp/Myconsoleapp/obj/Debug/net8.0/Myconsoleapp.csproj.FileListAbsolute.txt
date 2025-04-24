@@ -1,0 +1,14 @@
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.exe
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.deps.json
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.runtimeconfig.json
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.dll
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.pdb
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.AssemblyInfoInputs.cache
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.AssemblyInfo.cs
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.csproj.CoreCompileInputs.cache
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.dll
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\refint\Myconsoleapp.dll
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.pdb
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.genruntimeconfig.cache
+D:\Rahul - training\.net\Myconsoleapp\Myconsoleapp\obj\Debug\net8.0\ref\Myconsoleapp.dll

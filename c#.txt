@@ -1,0 +1,82 @@
+comment
+single and multi line
+
+variables
+type variablename = value;
+sting name ='john';
+
+constant
+const-keyword
+
+identifiers
+case sensitive
+
+data type
+
+type casting
+implicit and explict
+convert fn
+
+user input-console.readline()
+ex-int x=convert.Toint32(console.readline())
+
+operators
+length-property
+touppper tolower
+concat
+index[]
+substring()
+indexOf()
+
+
+special character
+backslash
+new line \n
+tab \t
+backspace \b
+
+conditional stmsts
+
+loops =for_loop-while_loop-foreach_loop-dowhile_loop
+
+odd or even
+odd or even using function
+a or b greater
+static fn
+
+loops
+do while -print 1 to 10 & while loop & for loop
+
+* accept 10 numbers and find sum
+* acept 10 numbers and find odd or even;
+
+
+oops
+---------
+class=
+object=
+class memebers,fields,methods,
+constructor
+access modifiers
+
+properties
+-------------------
+get and set methods
+
+eg)
+
+encapsulation
+-------------
+use private access specifier;
+
+abstration
+--------------
+abstract class and abstract method;
+abstract fn
+inheritance
+--------------
+polymorphism
+------------
+
+
+

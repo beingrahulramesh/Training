@@ -1,0 +1,14 @@
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.AssemblyInfoInputs.cache
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.AssemblyInfo.cs
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.csproj.CoreCompileInputs.cache
+D:\Rahul - training\.net\polymorphism\polymorphism\bin\Debug\net8.0\polymorphism.exe
+D:\Rahul - training\.net\polymorphism\polymorphism\bin\Debug\net8.0\polymorphism.deps.json
+D:\Rahul - training\.net\polymorphism\polymorphism\bin\Debug\net8.0\polymorphism.runtimeconfig.json
+D:\Rahul - training\.net\polymorphism\polymorphism\bin\Debug\net8.0\polymorphism.dll
+D:\Rahul - training\.net\polymorphism\polymorphism\bin\Debug\net8.0\polymorphism.pdb
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.dll
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\refint\polymorphism.dll
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.pdb
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\polymorphism.genruntimeconfig.cache
+D:\Rahul - training\.net\polymorphism\polymorphism\obj\Debug\net8.0\ref\polymorphism.dll

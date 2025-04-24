@@ -1,0 +1,14 @@
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.AssemblyInfoInputs.cache
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.AssemblyInfo.cs
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.csproj.CoreCompileInputs.cache
+D:\Rahul - training\.net\inheritance\inheritance\bin\Debug\net8.0\inheritance.exe
+D:\Rahul - training\.net\inheritance\inheritance\bin\Debug\net8.0\inheritance.deps.json
+D:\Rahul - training\.net\inheritance\inheritance\bin\Debug\net8.0\inheritance.runtimeconfig.json
+D:\Rahul - training\.net\inheritance\inheritance\bin\Debug\net8.0\inheritance.dll
+D:\Rahul - training\.net\inheritance\inheritance\bin\Debug\net8.0\inheritance.pdb
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.dll
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\refint\inheritance.dll
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.pdb
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\inheritance.genruntimeconfig.cache
+D:\Rahul - training\.net\inheritance\inheritance\obj\Debug\net8.0\ref\inheritance.dll

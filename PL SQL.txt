@@ -1,0 +1,24 @@
+declare 
+num1 number:= :num1;
+num2 number:= :num2;
+
+ 
+begin 
+
+
+
+dbms_output.put_line('The sum is ' || (NUM1 + NUM2));
+dbms_output.put_line('The product is ' || (NUM1 * NUM2));
+dbms_output.put_line('The difference is ' || (NUM1 - NUM2));
+
+end;
+
+
+
+declare
+v_name varchar(20):= :v_name;
+
+begin
+
+dbms_output.put_line('Welcome ' || v_name);
+end;
