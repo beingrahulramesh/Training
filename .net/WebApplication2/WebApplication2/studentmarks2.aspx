@@ -23,7 +23,7 @@
             <br />
             <asp:Label ID="Label3" runat="server" Text="average marks"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
             <br />
         </div>
     </form>

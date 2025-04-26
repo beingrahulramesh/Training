@@ -69,9 +69,14 @@
   <ItemGroup>
     <Content Include="navigate.aspx" />
     <Content Include="navigateto.aspx" />
+    <Content Include="productprice.aspx" />
     <Content Include="sessionExample1.aspx" />
     <Content Include="sessionExample2.aspx" />
     <Content Include="sessionExample3.aspx" />
+    <Content Include="student.aspx" />
+    <Content Include="student2.aspx" />
+    <Content Include="student3.aspx" />
+    <Content Include="student4.aspx" />
     <Content Include="studentmarks1.aspx" />
     <Content Include="studentmarks2.aspx" />
     <Content Include="studentmarks3.aspx" />
@@ -94,6 +99,13 @@
     <Compile Include="navigateto.aspx.designer.cs">
       <DependentUpon>navigateto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="productprice.aspx.cs">
+      <DependentUpon>productprice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productprice.aspx.designer.cs">
+      <DependentUpon>productprice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sessionExample1.aspx.cs">
       <DependentUpon>sessionExample1.aspx</DependentUpon>
@@ -115,6 +127,34 @@
     </Compile>
     <Compile Include="sessionExample3.aspx.designer.cs">
       <DependentUpon>sessionExample3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student.aspx.cs">
+      <DependentUpon>student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student.aspx.designer.cs">
+      <DependentUpon>student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student2.aspx.cs">
+      <DependentUpon>student2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student2.aspx.designer.cs">
+      <DependentUpon>student2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student3.aspx.cs">
+      <DependentUpon>student3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student3.aspx.designer.cs">
+      <DependentUpon>student3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student4.aspx.cs">
+      <DependentUpon>student4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student4.aspx.designer.cs">
+      <DependentUpon>student4.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentmarks1.aspx.cs">
       <DependentUpon>studentmarks1.aspx</DependentUpon>
