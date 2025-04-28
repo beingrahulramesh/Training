@@ -67,11 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="datalist.aspx" />
     <Content Include="gridview1.aspx" />
+    <Content Include="gridview2.aspx" />
     <Content Include="insert.aspx" />
+    <Content Include="update.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datalist.aspx.cs">
+      <DependentUpon>datalist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="datalist.aspx.designer.cs">
+      <DependentUpon>datalist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dbconnection.cs" />
     <Compile Include="gridview1.aspx.cs">
       <DependentUpon>gridview1.aspx</DependentUpon>
@@ -79,6 +89,13 @@
     </Compile>
     <Compile Include="gridview1.aspx.designer.cs">
       <DependentUpon>gridview1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview2.aspx.cs">
+      <DependentUpon>gridview2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview2.aspx.designer.cs">
+      <DependentUpon>gridview2.aspx</DependentUpon>
     </Compile>
     <Compile Include="insert.aspx.cs">
       <DependentUpon>insert.aspx</DependentUpon>
@@ -88,6 +105,13 @@
       <DependentUpon>insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

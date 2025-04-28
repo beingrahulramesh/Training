@@ -12,7 +12,7 @@ namespace database_connection
         public SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Administrator\Documents\Company_431111.mdf;Integrated Security=True;Connect Timeout=30");
         //sql connection string
         public void execute(SqlCommand cmd)//for executin dml stmts=execute
-        {
+        {//function execute (type name)=public void execute(sqlcommand cmd)
             cmd.Connection = cn;
             if(cn.State == ConnectionState.Open)
             {
@@ -26,6 +26,7 @@ namespace database_connection
 
         public SqlDataReader Getresult(SqlCommand cmd)
         {
+            //return type sqldatareader
             cmd.Connection= cn;
             if(cn.State == System.Data.ConnectionState.Open)
             {
@@ -33,6 +34,9 @@ namespace database_connection
             }
             cn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
+
+            //select queries execution=executereader
+            //other queries execution=executenonreader();
             return dr;
             cn.Close();
         }

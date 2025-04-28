@@ -23,15 +23,19 @@ namespace database_connection
             SqlCommand cmd = new SqlCommand();
 
             cmd.CommandText = "insert into Student values(@id_values,@name_values,@age_values)";
+            
             cmd.Parameters.AddWithValue("@id_values", int.Parse(TextBox2.Text));
+
             //binding with database
+
             cmd.Parameters.AddWithValue("@name_values", (TextBox1.Text));
 
 
             cmd.Parameters.AddWithValue("@age_values", int.Parse(TextBox3.Text));
 
+             
+            dbl.execute(cmd);//to execute  
 
-            dbl.execute(cmd);//to execute
 
 
 

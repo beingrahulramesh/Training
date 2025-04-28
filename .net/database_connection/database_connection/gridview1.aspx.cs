@@ -12,7 +12,7 @@ namespace database_connection
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            dbconnection db = new dbconnection();
+            dbconnection db = new dbconnection();//dbconnection = class name which used to create connection :dbconnection.cs
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select * from Student";
              SqlDataReader  dr = db.Getresult(cmd);
