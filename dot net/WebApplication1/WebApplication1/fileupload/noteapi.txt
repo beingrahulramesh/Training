@@ -1,0 +1,193 @@
+VIEW REPORT
+
+
+CONTROLLER
+public IActionResult viewreport1()
+{
+    return View();
+}
+LAYOUT PAGE
+
+@Html.ActionLink("ViewTable(TABLE)", "viewreport1", "Employee")
+
+VIEW 
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        select {
+            width:200px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #007BFF; /* Blue border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #ffffff; /* White background */
+            color: #333; /* Dark text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: border-color 0.3s; /* Smooth transition for border color */
+        }
+            select:hover {
+                border-color: #0056b3; /* Darker blue on hover */
+            }
+            select:focus {
+                outline: none; /* Remove default outline */
+                border-color: #0056b3; /* Darker blue when focused */
+            }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+    </style>
+</head>
+<body>
+    Branch ID
+    <input type="text" id="txtbrid" value="1" disabled="true">
+    <button id="fetchProducts"  onclick="viewreport()" class="btn btn-primary">Fetch Products</button>
+    <table id="reportTable">
+        <thead>
+            <!-- Headers will be dynamically added here -->
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+    <script>
+
+        function viewreport() {
+            var brid = document.getElementById('txtbrid').value;
+            var d1 = fetchapiGet(brid);
+
+            fetchapiGet();
+        }
+
+        function fetchapiGet(brid) {
+                    debugger;
+            var flag = "PROC_EMPLOYEEDATA_TEST_12_0CT/GETEMPLIST";
+                    var indata = brid+'$'+flag;
+                    var data = '';
+                    $.ajax({
+                        type: "GET",
+                        url: '/Employee/getAPIData',
+                        data: { datas: indata },
+                        async: false,
+                        success: function (response) {
+                            data = JSON.parse(response);
+                            LoadReport(data);
+                        },
+                        error: function (response) {
+                            check = 0;
+                        }
+                    });
+                }
+        function LoadReport(data) {
+            debugger;
+            const reportTable = document.getElementById('reportTable');
+            const tbody = reportTable.querySelector('tbody');
+            const thead = reportTable.querySelector('thead');
+
+            // Clear existing rows and headers
+            tbody.innerHTML = '';
+            thead.innerHTML = '';
+
+            // Check if data is valid
+            if (Array.isArray(data) && data.length > 0) {
+                // Create table headers dynamically
+                const headerRow = document.createElement('tr');
+                Object.keys(data[0]).forEach(key => {
+                    const th = document.createElement('th');
+                    th.textContent = key; // Use the key as the header
+                    headerRow.appendChild(th);
+                });
+                thead.appendChild(headerRow);
+
+                // Populate the table with new rows
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+
+                    // Create cells for each property in the item
+                    Object.values(item).forEach(value => {
+                        const cell = document.createElement('td');
+                        cell.textContent = value; // Set the cell text to the value
+                        row.appendChild(cell);
+                    });
+
+                    // Append the row to the table body
+                    tbody.appendChild(row);
+                });
+            }
+        }
+
+        function formatDataAsArray(data) {
+            debugger;
+            // Assuming data is already in the correct format
+            return data; // Return the data as is
+        }
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+CONTROLLER
+
+public string getAPIData(string datas)     //Get API Response
+{
+// Split the input string 'datas' using '$' as the delimiter
+    string[] datastring = datas.Split("$");
+ // Construct the API path using the second and first elements of the split array
+    string ApiPath = "https://uatapp.manappuram.net/MebsAppModuleApi/api/OTHERSModuleAPI/GetDataOTHERS/" + datastring[1] + "~" + datastring[0] + "/1";
+    // Create an instance of HttpClient to make the HTTP request
+            
+    using (var client = new HttpClient())
+    {
+        // Initialize a variable to hold the response data
+        string data = "";
+        // Set the base address of the HttpClient to the constructed API path
+        client.BaseAddress = new Uri(ApiPath);
+        // Make a GET request to the API and wait for the result
+
+        HttpResponseMessage result = client.GetAsync(client.BaseAddress).Result;
+        // Check if the response indicates success
+        if (result.IsSuccessStatusCode)
+        {
+            // Read the response content as a string
+            data = result.Content.ReadAsStringAsync().Result;
+        }
+        // Return the response data 
+        return data;
+    }
+}
