@@ -18,6 +18,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Remove control" />
             <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
+            <br />
+            <br />
+            <br />
 
 
         </div>
