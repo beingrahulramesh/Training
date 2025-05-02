@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ge8sMCtxEGAxiM2z/EI2pVOHUw5Q3F+LGj2AtXuF8zw=",
+  "Source": "exampleapi",
+  "BasePath": "_content/exampleapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
