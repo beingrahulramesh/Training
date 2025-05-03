@@ -10,3 +10,8 @@ add layers- right click-add-new project-class library-projectname-.net frame
 create class in a folder inside the layers business and dataaccess by right click layer add folder and add class
 
 add controller
+
+project dependency and project reference
+----------------------------------------
+
+project dependency=
