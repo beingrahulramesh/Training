@@ -1,4 +1,6 @@
-asp.net core webapi c#> name >dont tick solutioin and project in same directory
+(study async await)
+asp.net core webapi c#> name >
+dont tick solutioin and project in same directory
 framework =.net version 8
 api endpoint=request url
 api body=response body
@@ -14,4 +16,33 @@ add controller
 project dependency and project reference
 ----------------------------------------
 
-project dependency=
+project dependency=right click on project name and add dependencies >click the layers>click ok
+
+project reference=same add project dependencies
+
+link the business with data access=right click and add dependencies with dataaccess & also add references
+
+
+--------------------------------------
+
+service pages(service class:imp) and dependencies injection
+
+dependencies injection=in program .cs file
+// Add services to the container.
+
+builder.Services.AddControllers();
+builder.Services.AddTransient<employeeservice>();//our class name in<>(the class we created inside the layers data access and business >services)
+builder.Services.AddTransient<Class1>();
+
+
+---------------------------------------
+Connecting database
+
+appsettin .json
+
+context=folder>inside dataaccess layer
+datacontext class file create
+(base class=dbcontext)
+
+controller base class.
+

@@ -5,6 +5,42 @@
     "version": "1.0"
   },
   "paths": {
+    "/Getname/{name}": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "operationId": "Getname",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Getallempdetails": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "operationId": "Getallempdetails",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [

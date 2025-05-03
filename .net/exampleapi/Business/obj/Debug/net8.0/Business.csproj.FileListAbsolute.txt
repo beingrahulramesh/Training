@@ -1,0 +1,16 @@
+D:\Rahul - training\.net\exampleapi\Business\bin\Debug\net8.0\Business.deps.json
+D:\Rahul - training\.net\exampleapi\Business\bin\Debug\net8.0\Business.dll
+D:\Rahul - training\.net\exampleapi\Business\bin\Debug\net8.0\Business.pdb
+D:\Rahul - training\.net\exampleapi\Business\bin\Debug\net8.0\DataAccess.dll
+D:\Rahul - training\.net\exampleapi\Business\bin\Debug\net8.0\DataAccess.pdb
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.sourcelink.json
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.dll
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\refint\Business.dll
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\Business.pdb
+D:\Rahul - training\.net\exampleapi\Business\obj\Debug\net8.0\ref\Business.dll

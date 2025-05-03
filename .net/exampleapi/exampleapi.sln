@@ -3,8 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exampleapi", "exampleapi\exampleapi.csproj", "{01E1B790-5D93-4DAD-A0BA-9058C8252D51}"
+	ProjectSection(ProjectDependencies) = postProject
+		{671FAEE7-4D58-44CA-BCB9-09384BA31C28} = {671FAEE7-4D58-44CA-BCB9-09384BA31C28}
+		{9E94B10E-9723-458B-9B4E-4BA6F1F9AE23} = {9E94B10E-9723-458B-9B4E-4BA6F1F9AE23}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{9E94B10E-9723-458B-9B4E-4BA6F1F9AE23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{671FAEE7-4D58-44CA-BCB9-09384BA31C28} = {671FAEE7-4D58-44CA-BCB9-09384BA31C28}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{671FAEE7-4D58-44CA-BCB9-09384BA31C28}"
 EndProject
