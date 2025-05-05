@@ -1,0 +1,35 @@
+mvc=model view controller
+-------------------------
+view=user interface.called as razer page.extension=html or .cshtml
+Controller= actions,methods
+model=get,set,id,etc
+
+new project
+asp.net core web app model view controller>name
+
+program.cs is the entry point of application
+in program.cs this code=app.MapControllerRoute(
+    name: "default",
+    //pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Employee}/{action=Homepage}/{id?}"
+    ); is responsible for display the homepage 
+
+
+.we define the controller to be executed when the application starts
+view contains the cshtml files to display
+
+the name of view folder is same as the name of the controller.if we define like this controller will automatically be mapped to the view folder.
+in the program.cs we specify the controller name and the action to be executed
+
+ //IActionResult=return type
+
+created an employee controller
+and code = //IActionResult=return type
+ public IActionResult Homepage() {
+ 
+     return View();
+ }
+
+creted a fn()
+
+right click>homepage()> add >view>razor view>
