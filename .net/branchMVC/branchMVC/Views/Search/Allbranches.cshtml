@@ -70,21 +70,27 @@
             var flag = "GetAllBranchdetails";
 
             var indata = flag
-            var data = '';
-            $.ajax({
+            var data = "";
+            try{
+                $.ajax({
                 type: "GET",
-                url: '/Searchcontroller/Allbranches',
+                url: '/Search/getAPIData',
                         data: { datas: indata },
                         async: false,
                         success: function (response) {
                             data = JSON.parse(response);
+                            console.log(data);
                             LoadReport(data);
                         },
                         error: function (response) {
                             check = 0;
                         }
                     });
-                }
+            }catch(e){
+                console.log(e);
+            }
+            
+          }
         function LoadReport(data) {
             debugger;
             const reportTable = document.getElementById('reportTable');
@@ -123,6 +129,7 @@
             }
         }
 
-        </script>
+    </script>
 
-
+</body>
+</html>

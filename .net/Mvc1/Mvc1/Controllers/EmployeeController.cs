@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
 using Mvc1.Models;
 using Newtonsoft.Json;
@@ -90,6 +91,45 @@ namespace Mvc1.Controllers
             return data;
         }
 
+
+        //
+
+        public async Task<dynamic> postAPIDData_model([FromBody] Employee employee)
+        {
+            string apiEndPoint = "https://localhost:7286/api/v1/InsertNewEmployee";
+
+            var apiData = new
+            {
+                id = employee.Id,
+                name = employee.Name,
+                department = employee.Department,
+                designation = employee.Designation,
+            };
+                    
+
+            var data = "";
+            using (var client = new HttpClient())
+            {
+                string content = JsonConvert.SerializeObject(apiData);
+
+
+                var buffer = Encoding.UTF8.GetBytes(content);
+
+                var byteContent = new ByteArrayContent(buffer);
+
+                byteContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                HttpResponseMessage result = await client.PostAsync(apiEndPoint, byteContent);
+
+                if (result.IsSuccessStatusCode)
+                {
+                    data = result.Content.ReadAsStringAsync().Result;
+                }
+            }
+            return data;
+        }
+
+
+        //
         public IActionResult ViewEmployeeReportUsingModel()
         {
             return View();
@@ -135,7 +175,14 @@ namespace Mvc1.Controllers
             }
         }
 
+
+        public IActionResult InsertEmployeeModel()
+        {
+            return View();
+        }
         //
+        
+
 
     }
 }
