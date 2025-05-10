@@ -1,0 +1,39 @@
+1)first create sql connection in appsetting.json file.usign connection string.
+
+2)second =create a model folder and create a model with the table 
+public class Branch
+    {
+        public int BrId { get; set; }
+        public string BrName { get; set; }
+        public string Head { get; set; }
+        public int NoOfEmployee { get; set; }
+    }
+
+
+
+
+3)third create dbcontext for connection with the table .create in model folder.
+
+
+ public class dbcontext1:DbContext //this is inheriting from the dbcontext because include the to get iconfigurtion object.
+ {
+	 private readonly string _connectionstring;
+
+ public dbcontext1(string connnectionstring)
+ {
+     this._connectionstring = connnectionstring;
+ }
+ }
+
+//under this create a public connection that return a sql connection string
+
+ public SqlConnection GetConnectionString()
+ {
+     return  new SqlConnection(_connectionstring);
+ }
+
+
+4)give this dependency injection to program.cs file.
+
+builder.Services.AddTransient<Branch>();
+builder.Services.AddTransient<dbcontext1>();

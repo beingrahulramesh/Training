@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewData["Title"] = "SearchEmployee";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View Employee Report</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select Employee</h2>
+    <select id="employeeDropdown" onchange="Fetchemployee()">
+        
+        <option value="">-- Select an Employee --</option>
+    </select>
+
+
+    <div class="container">
+        <form action="/" method="post">
+            
+        <div>
+            <label>Id</label>
+                <input id="Userid" class="form-control" type="number" value="" />
+        </div>
+
+            <div>
+                <label>Name</label>
+                <input type="type" id="Name" class="form-control" disabled />
+            </div>
+
+            <div>
+                <label>Department</label>
+                <input type="type" id="Department" class="form-control" />
+            </div>
+
+            <div>
+                <label>Designation</label>
+                <input type="type" id="Designation" class="form-control" />
+            </div>
+        </form>
+
+    </div>
+   
+
+    <script>
+        window.onload = function () {
+            fetchapiGet();
+        };
+
+        function fetchapiGet() {
+            debugger;
+            var flag = "SearchEmployeesByName";
+            $.ajax({
+                type: "GET",
+                url: '/Employee/getAPIData',
+                data: { datas: flag },
+                async: false,
+                success: function (response) {
+                    var data = JSON.parse(response);
+                    console.log(data);
+                    populateDropdown(data);
+                },
+                error: function (response) {
+                    alert("Failed to load employee data.");
+                }
+            });
+        }
+
+        function populateDropdown(data) 
+        {
+            const dropdown = document.getElementById('employeeDropdown');
+            dropdown.length = 1; // Keep only the default option
+
+            if (Array.isArray(data) && data.length > 0) {
+                data.forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item.id;         // Ensure 'Id' exists in your object
+                    option.textContent = item.name+" -- "+item.id; // Ensure 'Name' exists in your object
+                    dropdown.appendChild(option);
+                });
+            }
+        }
+
+        function Fetchemployee(){
+            const employeeSelect = document.getElementById('employeeDropdown');
+            const selectedvalue = employeeSelect.value;
+            fetchapiget2(selectedvalue);
+
+        }
+
+        function fetchapiget2(selectedvalue)
+        {
+                 debugger;
+            var flag = "SearchEmployeeById";
+            var indata=flag + "/" + selectedvalue;
+            $.ajax({
+                type: "GET",
+                url: '/Employee/getAPIData',
+                data: { datas: indata },
+                async: false,
+                success: function (response) {
+                    var data = JSON.parse(response);
+                    console.log(data);
+                    loaddatatextbox(data);
+                    //populateDropdown(data);
+
+
+                },
+                error: function (response) {
+                    alert("Failed to load employee data.");
+                }});
+           
+           }
+
+           function loaddatatextbox(data){
+               if(data.length >0)
+               
+               {
+                   document.getElementById('Userid').value=data[0].id;
+                   document.getElementById('Name').value=data[0].name;
+                   document.getElementById('Designation').value=data[0].designation;
+                   document.getElementById('Department').value=data[0].department;
+
+               }
+           }
+
+    </script>
+</body>
+</html>
+
+

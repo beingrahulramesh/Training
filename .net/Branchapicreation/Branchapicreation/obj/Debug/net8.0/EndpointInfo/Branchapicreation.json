@@ -1,0 +1,58 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Branchapicreation",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/GetAllBranchdetails": {
+      "get": {
+        "tags": [
+          "Branch"
+        ],
+        "operationId": "GetAllBranchdetails",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/GetAllBranchIdNames": {
+      "get": {
+        "tags": [
+          "Branch"
+        ],
+        "operationId": "GetAllBranchIdnames",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/GetAllBranchById": {
+      "get": {
+        "tags": [
+          "Branch"
+        ],
+        "operationId": "GetAllBranchById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

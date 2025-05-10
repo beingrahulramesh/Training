@@ -1,0 +1,41 @@
+[
+  {
+    "ContainingType": "Branchapicreation.Controllers.BranchController",
+    "Method": "SearchEmployeeById",
+    "RelativePath": "api/v1/GetAllBranchById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBranchById"
+  },
+  {
+    "ContainingType": "Branchapicreation.Controllers.BranchController",
+    "Method": "GetAllBranchdetail",
+    "RelativePath": "api/v1/GetAllBranchdetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBranchdetails"
+  },
+  {
+    "ContainingType": "Branchapicreation.Controllers.BranchController",
+    "Method": "GetAllBranchIdName",
+    "RelativePath": "api/v1/GetAllBranchIdNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBranchIdnames"
+  }
+]

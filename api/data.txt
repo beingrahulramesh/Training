@@ -1,0 +1,7 @@
+data=GetAllEmployees
+
+data path="https://localhost:7286/api/v1/GetAllEmployees"
+
+value=
+
+return data=

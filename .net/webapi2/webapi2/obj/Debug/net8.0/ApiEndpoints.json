@@ -11,6 +11,51 @@
     "EndpointName": "GetAllEmployees"
   },
   {
+    "ContainingType": "webapi2.Controllers.EmployeeController.EmployeeController",
+    "Method": "InsertNewEmployee",
+    "RelativePath": "api/v1/InsertNewEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "webapi2.Model.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InsertEmployee"
+  },
+  {
+    "ContainingType": "webapi2.Controllers.EmployeeController.EmployeeController",
+    "Method": "SearchEmployeesById",
+    "RelativePath": "api/v1/SearchEmployeeById/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "SearchEmployeeByID"
+  },
+  {
+    "ContainingType": "webapi2.Controllers.EmployeeController.EmployeeController",
+    "Method": "SearchEmployeesByName",
+    "RelativePath": "api/v1/SearchEmployeesByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Searchemployees"
+  },
+  {
     "ContainingType": "webapi2.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

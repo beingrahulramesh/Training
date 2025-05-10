@@ -15,6 +15,7 @@ builder.Services.AddTransient<DataContext>();//dependency injection.(object ne r
 builder.Services.AddTransient<Employee>();
 builder.Services.AddTransient<EmployeeRepo>();
 builder.Services.AddTransient<EmployeeService>();
+builder.Services.AddTransient<SearchEmployee>();
 
 
 var app = builder.Build();
