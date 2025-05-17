@@ -1,0 +1,37 @@
+create a project =Creating project project1
+
+run project= cd project1
+flutter run
+
+flutter stateless widget = a static page
+
+flutter state widget = a dynamic page
+type st in new page created in the lib folder and select the stateless and state widget
+
+------------------------------------------------------------------------------------------
+to do images
+create a folder assets in project
+save images
+and in yaml file link these by
+assets:
+- assets\mbj.jpeg
+- assets\mbj2.jpg
+- assets\Untitled.jpg
+
+and add image tag and
+ Image(
+              image: AssetImage("assets/mbj.jpg"),
+              height: 200,
+              width: 200,
+            ),
+            Image(image: AssetImage("assets/mbj2.jpg")),
+            Image(image: AssetImage("assets/Untitled.jpg"))
+                    ],
+
+
+wrap with center = wrap the column with center position.(click the buld btn and add the wrap center )
+single child scroll view =scroll view adding.(click the buld btn and add the wrap with widjet & type the single scroll )
+
+yamel file ill add chythette and we want to restart the running
+
+
