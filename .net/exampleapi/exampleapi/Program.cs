@@ -6,6 +6,22 @@ using DataAccess.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+//add cous
+builder.Services.AddCors(o => o.AddPolicy("Mypolicy", builder =>
+{
+    builder.AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed((host) => true);
+}
+));
+
+
+
+
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -28,6 +44,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("Mypolicy");
+
 
 app.UseAuthorization();
 

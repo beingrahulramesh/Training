@@ -6,6 +6,7 @@ import 'package:project1/page3.dart';
 import 'package:project1/page4.dart';
 import 'package:project1/page5.dart';
 import 'package:project1/page6.dart';
+import 'package:project1/page7.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -42,7 +43,7 @@ class Page1 extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) =>  Page6()));
+                  .push(MaterialPageRoute(builder: (context) =>  Page7()));
             },
             style: ElevatedButton.styleFrom(
                 elevation: 20,
